@@ -32,13 +32,9 @@
     .eyebrow { color: var(--gold); font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
     .muted { color: var(--muted); }
     .header { border-bottom: 1px solid var(--line); background: #0a111a; }
-    .header .wrap, nav, .actions { display: flex; align-items: center; gap: 1.25rem; }
-    .header .wrap { min-height: 76px; justify-content: space-between; }
+    .header .wrap, .actions { display: flex; align-items: center; gap: 1.25rem; }
+    .header .wrap { min-height: 76px; }
     .brand { text-decoration: none; font: 1.3rem var(--display); }
-    .brand small { display: block; color: var(--gold); font: 600 .55rem system-ui; letter-spacing: .2em; text-transform: uppercase; }
-    nav { gap: clamp(.7rem, 3vw, 2rem); }
-    nav a { text-decoration: none; font-size: .83rem; }
-    nav a:hover, .text-link:hover { color: var(--gold); }
     .button { display: inline-flex; align-items: center; justify-content: center; padding: .8rem 1.35rem; min-height: 44px; border-radius: 999px; color: #12151d; background: linear-gradient(135deg, #ffe9a8, #dfbb6a); text-decoration: none; font-size: .85rem; font-weight: 750; }
     .button:hover { background: #fff0bf; }
     .button.outline { color: var(--paper); background: #ffffff0e; box-shadow: inset 0 0 0 1px #f7dc8c35; }
@@ -179,8 +175,6 @@
       .hero .actions { justify-content: center; }
       .poster { width: min(100%, 400px); margin-inline: auto; }
       .poster img { max-height: 680px; object-fit: contain; }
-      .header .wrap { flex-wrap: wrap; gap: .35rem; padding-block: .75rem; }
-      nav { flex-wrap: wrap; }
       video { max-height: 500px; }
     }
     @media (max-width: 360px) {
@@ -193,13 +187,7 @@
 <body id="inicio">
   <header class="header">
     <div class="wrap">
-      <a class="brand" href="#inicio">Yuri Manjarrez<small>Entertainment</small></a>
-      <nav aria-label="Navegación principal">
-        <a href="#experiencia">El evento</a>
-        <a href="#precios">Precios</a>
-        <a href="#mesas">Mesas</a>
-        <a class="button" href="#reservas">Reservas</a>
-      </nav>
+      <a class="brand" href="#inicio">Yuri Manjarrez</a>
     </div>
   </header>
   <main>
